@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blaeck Hardt</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Portafolio web de Blaeck" />
+        <meta name="theme-color" content="#000000" />
+        <meta property="og:title" content="Blaeck Hardt" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="#ref" />
+        <meta property="og:image:alt" content="descripción de imagen" />
+        <meta name="twitter:title" content="Blaeck Hardt" />
+        <meta name="twitter:descripción" content="Descripción de imagen" />
+        <meta name="twitter:url" content="#ref/?src=twitter" />
+        <meta name="twitter:image:scr" content="#ref/image/all.png" />
+        <meta name="twitter:image:alt" content="Descripción imagen que hay aquí" />
+        <meta name="twitter:creator" content="@Blaeck_Hardt" />
+        <meta name="twitter:site" content="@ajajjanomms" />
+        <link rel="stylesheet" href="css/styleb.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="apple-touch-statup-image" href="icons/ios-portrait.png" media="orientation: portrait" />
+        <link rel="apple-touch-statup-image" href="icons/ios-landscape.png" media="orientation: landscape" />
+        <link rel="alternate" href="#ref/fr/" hreflang="fr-FR" />
+        <link rel="alternate" href="#ref/pt/" hreflang="pt-BR" />
+        <link rel="canonical" href="#ref" />
+        <link rel="manifest" href="js/mlwmanifest.json" />
+    </head>
+    
+    <body>
+        <!-- Comienza el encabezado -->
+        <div class="pageHeader">
+            <div class="container">
+                <!-- Inicio logo -->
+                <h1 class="logo">
+                    <a href="start.html">Blaeck Hardt</a>
+                </h1>
+                <!-- Fin logo -->
+                <!-- Barra de navegación -->
+                <ul>
+                    <li><a href="start.html" class="current">Inicio</a></li>
+                    <li><a href="consultor.html">Consultoría</a></li>
+                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                </ul>
+                <!-- Fin de la barra de navegación -->
+            </div>
+        </div>
+        <!-- Fin del encabezado -->
+        <div class="mainphoto">
+            <div class="container">
+                <h1>Muestreo probabilístico</h1>
+                <p>Obtención de datos precisos</p>
+            </div>
+        </div>
+        <!-- Conenido -->
+        <section class="container content">
+            <h3>Introducción</h3>
+            <p>Muchas veces, durante nuestras labores profesionales, nos encontramos inmersos en tareas que demandan un análisis exhaustivo y, en estas situaciones, es común que nos centremos exclusivamente en los resultados descuidando el proceso mismo de análisis. Sin embargo, es importante recordar que el análisis requiere más que simplemente ejecutar un programa o apretar un botón, implica una exploración profunda para asegurar la coherencia de los resultados con nuestros objetivos.
+                Un aspecto fundamental del análisis, incluso antes de comenzar, es el muestreo. A grandes rasgos el muestreo implica la selección de un conjunto de datos de una población o conjunto más amplio, como seleccionar un puño de frijoles con la mano de entre cientos de ellos solo para estudiarlos. Pero vayamos un poco más a fondo y armemos de mejor manera este concepto.
+                .</p>
+
+            <h2>Muestreo Probabilístico.</h2>
+            <p>Los métodos de muestreo probabilísticos son aquellos que se basan en el principio de equiprobabilidad (probabilidad equivalente). Es decir, aquellos en los que todos los individuos tienen la misma probabilidad de ser elegidos para formar parte de una muestra y se conoce de forma precisa dicha probabilidad.</p>
+            <p>Sólo  estos métodos de muestreo probabilísticos nos aseguran la representatividad de la muestra extraída y son, por tanto, los más recomendables. </p>
+            <p>Dentro de los métodos de muestreo probabilísticos encontramos lo siguiente tipos:</p>
+            <!--<img src="https://images.pexels.com/photos/7567567/pexels-photo-7567567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Descripción de la imagen" style="max-width:50%; height:auto;" >-->
+
+            <h2>Muestreo aleatorio simple.</h2>
+            <p>El procedimiento empleado para realizar este tipo de muestreo probabilístico es el siguiente:</p>
+            <ol>
+                <li>Se asigna un número a cada individuo de la población</li>
+                <li>A través de un medio mecánico (esferas dentro de una bolsa, tablas de números aleatorios, números aleatorios generados por computadora, etc.) se eligen tantos sujetos como sea necesario para completar el tamaño de muestra requerido</li>
+            </ol>
+            <p>Este tipo de muestreo se recomienda para poblaciones pequeñas y entre sus ventajas se encuentran el que es sencillo y de fácil comprensión, que se pueden calcular rápidamente sus estadísticos como varianza y media y no es necesario tener un conocimiento a priori de la población. Sin embargo, a pesar de su sencillez requiere de una identificación y catalogación de la población (lo cual a veces resulta costoso), una probabilidad de selección igual para todos los elementos que conformaban la población y un mayor tamaño de muestra que los otros tipos de muestreo.</p>
+            <br>
+            <div class="grid-container" id="grid"></div>
+            <br>
+            
+            <h2>Muestreo aleatorio sistemático</h2>
+            <p>Este procedimiento exige, como el anterior, numerar todos los elementos de la población, pero en lugar de extraer <span class="formula">n</span> números aleatorios solo se extrae uno. Se parte de ese número aleatorio <span class="formula">i</span>, que es un número elegido al azar, y los elementos que integran la muestra son los lugares que ocupa los lugares <span class="formula">i, i+k, i+2k, i+3k, …, i+(n-1)k</span>, es decir, se toman los individuos de <span class="formula">k</span> en <span class="formula">k</span>, siendo k el resultado de dividir el tamaño de la población entre el tamaño de la muestra: <span class="formula">k = <sup>N</sup>/<sub>n</sub></span>.</p>
+            <p>El número <span class="formula">i</span> que empleamos como punto de partida será un número al azar entre <span class="formula">1</span> y <span class="formula">k</span>. El riesgo de este tipo de muestreo está en los casos en que se dan periodicidades en la población ya que al elegir a los miembros de la muestra con una periodicidad constante (<span class="formula">k</span>) podemos introducir una homogeneidad que no se da en la población. Imaginemos que estamos seleccionando una muestra sobre listas de 10 individuos en los que los primeros 5 varones y los últimos 5 son mujeres, si empleamos un muestreo aleatorio sistemático con <span class="formula">k=10</span> siempre seleccionaríamos o sólo hombres o sólo mujeres, no podría haber una representación de los dos sexos.</p>
+            <br>
+            <div class="grid-container" id="grid-2"></div>
+            <br>
+
+            <h2>Muestreo aleatorio estratificado</h2>
+            <p>Con el objetivo de reducir el error muestral se forman grupos homogéneos respecto a alguna característica (por ejemplo sexo, profesión, estado civil, lugar de residencia, ingresos, etc.) Es decir, se divide la población en subpoblaciones o estratos. Cada estrato funciona independientemente, pudiendo aplicarse dentro de ellos el muestreo aleatorio simple para elegir a los elementos que formarán parte de la muestra.</p>
+            <p>Lo que se pretende con este tipo de muestreo es asegurarse de que todos los estratos de interés estarán representados adecuadamente en la muestra.</p>
+            <p>Ahora, este tipo de muestreo se recomienda cuando se tiene un conocimiento a priori de la población, cuando se trata de elementos poblacionales susceptibles a la estratificación o cuando hay interés por obtener información a nivel de los estratos, esto permite obtener estimaciones más precisas consiguiendo una muestra lo más semejante posible a la población.</p>
+
+            <h2>Muestreo aleatorio por conglomerados</h2>
+            <p>Este está un poquito complicado, así que te conviene descansar tu vista unos minutos y continuar leyendo después. Hasta ahora hemos visto métodos muestrales para seleccionar directamente los elementos de una población, es decir, que las unidades muestrales son los elementos de la población. En el muestreo por conglomerados la unidad muestral es un grupo de elementos de la población que forman una unidad, a la que llamamos conglomerado (de manera sencilla es como tomar varios puñitos de frijolitos de un costal y cada puñito es un conglomerado y cada conglomerado es como un solo frijolito). Ejemplos de conglomerados naturales son las unidades hospitalarias, departamentos universitarios (ingeniería, ciencias sociales, arquitectura, etc.), una caja de un determinado producto, etc.,  pero también los hay no naturales como las urnas electorales y, cuando los conglomerados son áreas geográficas suele hablarse de un "muestreo por áreas". El muestreo por conglomerados consiste en seleccionar aleatoriamente un número de conglomerados (el necesario para alcanzar el tamaño muestral establecido) y en investigar después todos los elementos pertenecientes a los conglomerados elegidos.</p>
+            <p>Esta técnica de muestreo es barata, rápida y fácil. En lugar de realizar un muestreo de toda la población, como en el muestreo aleatorio simple, el investigador puede asignar sus limitados recursos a los pocos conglomerados o áreas seleccionadas aleatoriamente. También puede aumentar el tamaño de muestra teniendo en cuenta que el solo tendrá que tomar la muestra de una serie de áreas o conglomerados, puede seleccionar más sujetos, ya que son más accesibles.</p>
+            <br>
+        </section>
+        <!--<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMzgzYzVkYzMtMjVjZC00YjdmLWI4NmYtMjdiNzhlMDIxODg4IiwidCI6IjVkMTdiOTVlLTU5YjItNDMwYi04NTRhLTMzYjMxMjNhMmNlNSJ9" frameborder="0" allowFullScreen="true"></iframe> -->
+
+        <!-- Fin de contenido -->
+        <footer>
+            <div class="footer">
+                <div class="about content">
+                    <h2>About us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga obcaecati illo tempore nam dolorum, nemo porro. Quos expedita similique itaque facilis atque, quia doloremque.</p>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+                <div class="links content">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="links content">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter content">
+                  <h2>Our Newsletter</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aperiam.</p>
+                  <form action="#">
+                      <input type="email" placeholder="Email" required>
+                      <button type="submit">Send</button>
+                  </form>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin pied e página -->
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="js/scriptb.js"></script>
+    </body>
+</html>
