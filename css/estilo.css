@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+.mainphoto {
+  position: relative;
+  height: 115vh;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.mainphoto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+  z-index: -1;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mainphoto h1 {
+  font-size: 40px;
+  margin: -20px 0 20px;
+  padding-left: 20px;
+  background-position: left;
+}
+
+.mainphoto p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+.text {
+    color: rgb(255,255,255);
+}
+.text p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.layout { 
+  display: flex; 
+  margin: 0 auto; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+} 
+.image-container { 
+  width: 33.33%; 
+} 
+.image-container img { 
+  width: 100%; 
+  height: auto; 
+} 
+.text-container { 
+  width: 66.67%; 
+  padding-left: 20px; 
+  font-size: 22px;
+  color: rgb(255,255,255);
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100vw;
+
+}
+
+.image-containers {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+img {
+  width: 100vw;
+
+  object-fit: cover;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.image-quadrant {
+  width: 100%;
+  height: 100%;
+}
+
+.image-quadrant img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-image-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.full-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerbat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info h1 {
+  font-size: 24px;
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: purple;
+  border-color: purple;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* Hace los iconos blancos en fondos oscuros */
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: invert(0.6); /* Hace los iconos más claros al pasar el cursor */
+}
+
