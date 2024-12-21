@@ -163,11 +163,12 @@ img {
 
 .contact-info h1 {
   font-size: 24px;
-  color: purple;
+  color: red;
   margin-bottom: 10px;
 }
 
 .contact-info p {
+  color:#fff;
   margin: 5px 0;
 }
 
@@ -178,6 +179,7 @@ img {
 
 .contact-info a:hover {
   text-decoration: underline;
+  color:#fff;
 }
 
 .form-container {
@@ -201,6 +203,7 @@ input, textarea {
 
 textarea {
   resize: none;
+  color:#fff;
 }
 
 button {
@@ -214,8 +217,8 @@ button {
 }
 
 button:hover {
-  background-color: purple;
-  border-color: purple;
+  background-color: red;
+  border-color: red;
 }
 
 footer {
@@ -238,6 +241,7 @@ footer {
 }
 
 .footer-container p {
+  color:#fff;
   margin: 0;
 }
 
@@ -257,3 +261,4 @@ footer {
   transform: scale(1.2);
   filter: invert(0.6); /* Hace los iconos más claros al pasar el cursor */
 }
+
